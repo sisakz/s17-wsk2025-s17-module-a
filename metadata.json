@@ -1,22 +1,22 @@
 {
-  "name": "",
-  "displayName": "",
-  "description": "",
-  "url": "",
-  "skillDomainIds": [
-    1
-  ],
-  "languages": [
-    "EN"
-  ],
-  "competition": "",
+  "name": "WSKZ2025 S17 - Module A",
+  "displayName": "Online Classifieds Promo Landing Site",
+  "description": "Build a responsive promotional landing site using HTML and CSS for an online classifieds platform. The site presents features and benefits for sellers and buyers across multiple pages with SEO, OpenGraph, CSS-only navigation submenus, and provided content assets.",
+  "url": "https://github.com/sisakz/s17-wsk2025-s17-module-a",
+  "skillDomainIds": [1],
+  "languages": ["EN"],
+  "competition": "WorldSkills Kazakhstan National Competition 2025",
   "estTime": 3,
   "authors": [
     {
-      "name": "",
-      "url": ""
+      "name": "Aizhan Ziyadanova",
+      "url": "https://github.com/aizhanzo"
+    },
+    {
+      "name": "Denis Popov",
+      "url": "https://github.com/denisvalentinovich"
     }
   ],
-  "technologies": [],
-  "tags": []
+  "technologies": ["HTML", "CSS"],
+  "tags": ["frontend", "design", "static website", "responsive design", "SEO"]
 }

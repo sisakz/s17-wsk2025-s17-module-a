@@ -1,1 +1,498 @@
-{}
+{
+  "totalMark": 20,
+  "wsosSections": {
+    "1": "Work organization and management",
+    "2": "Communication and interpersonal skills",
+    "3": "Design implementation",
+    "4": "Front-end development",
+    "5": "Back-end development"
+  },
+  "subCriterions": [
+    {
+      "name": "Code quality",
+      "aspects": [
+        {
+          "type": "judgement",
+          "description": "Source code quality",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "source code is missing, not saved, or contains only default files without real markup",
+            "code is readable and understandable, but markup and style structure is not optimal: redundant rules, duplication, inappropriate tags, or weak CSS organization",
+            "repeated HTML and CSS fragments are minimized; semantic tags are used, classes are named consistently, styles are organized logically (e.g. grouped by blocks and sections); CSS duplication is kept to a minimum",
+            "HTML and CSS structure allows changes to be made easily without a full layout rewrite; best practices are applied: semantic markup, a consistent class naming system, modular styles, correct use of the cascade, no redundancy, and highly maintainable code"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Header",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "All pages include a header containing the required elements",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Logo, navigation, Publish and View buttons. Deduct 0.25 for each error",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Logo is taken from the provided media files",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Header is sticky on all pages",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Header buttons have correct URLs",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Publish: For Seller page. View: For Buyer page",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Header buttons have a data-type attribute with two style variants",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Navigation contains all required links",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Hovering a menu item displays the second-level navigation",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Skip if implemented using JavaScript",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Distinct styling for button types in the header",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "types are not implemented",
+            "types are implemented but differ only slightly or have a simple implementation",
+            "types are implemented and differ from each other, but the implementation is simple",
+            "types are implemented, clearly distinguishable, and look polished"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Micro-animations for different button types in the header",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "types are not implemented, or implemented without micro-animations",
+            "types are implemented, but micro-animations do not meet requirements, do not follow standards, or look simplistic",
+            "types are implemented; micro-animations look acceptable but do not fit the design style",
+            "types are implemented, distinguishable, and look good"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Main page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Home page contains all required sections",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Header CTA, About the project, categories, benefits, footer CTA, testimonials, footer. Deduct 0.25 for each missing block",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Header CTA on the home page contains a link button and text",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer CTA on the home page contains a link button and text",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "All sections use data from the provided media files",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer contains a second-level menu",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer contains a copyright notice with the current year",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Footer contains a link to the policy page",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Home page – Overall design",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "design does not match the task theme",
+            "design matches the task theme but looks simplistic",
+            "design matches the task theme and looks good, but there is room for improvement",
+            "design is excellent"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seller page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Page contains all required sections",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Storytelling, benefits, FAQ, footer. Deduct 0.25 for each missing block",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "All sections use data from the provided media files",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Seller page – Overall design",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "design does not match the task theme",
+            "design matches the task theme but looks simplistic",
+            "design matches the task theme and looks good, but there is room for improvement",
+            "design is excellent"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Storytelling",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "the story idea is not conveyed",
+            "the storytelling section is present, but the design looks simplistic or does not match the task theme",
+            "the storytelling section is present and the design looks fairly good, but there is room for improvement",
+            "storytelling and design are well executed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Buyer page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Buyer page contains all required sections",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Storytelling, benefits, FAQ, footer. Deduct 0.25 for each missing block",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "All sections use data from the provided media files",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Buyer page – Overall design",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "design does not match the task theme",
+            "design matches the task theme but looks simplistic",
+            "design matches the task theme and looks good, but there is room for improvement",
+            "design is excellent"
+          ]
+        },
+        {
+          "type": "judgement",
+          "description": "Storytelling",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "the story idea is not conveyed",
+            "the storytelling section is present, but the design looks simplistic or does not match the task theme",
+            "the storytelling section is present and the design looks fairly good, but there is room for improvement",
+            "storytelling and design are well executed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seller price list page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Page contains all required sections",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Price list, benefits, FAQ, footer. Deduct 0.25 for each missing block",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Each service in the price list contains a range input slider",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The specified number of days can be selected using the slider",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "The price updates when interacting with the slider for that service",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "All sections use data from the provided media files",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Contacts",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "Contacts page contains all required sections",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "extraDescription": "Contact form, contact details, social media links, map image. Deduct 0.25 for each missing block",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Contact form contains all form elements with correct input types",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Name, email, message. Score 0 if one or more elements are missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Contact details contain all required information",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "extraDescription": "Business hours, email. Score 0 if anything is missing",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Contacts – Overall design",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "design does not match the task theme",
+            "design matches the task theme but looks simplistic",
+            "design matches the task theme and looks good, but there is room for improvement",
+            "design is excellent"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Policy page",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "All sections use data from the provided media files",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Policy page is formatted with HTML and does not contain unformatted plain text",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Policy page – Overall design",
+          "maxMark": 0.75,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "text is unreadable",
+            "text is readable but not formatted",
+            "text is readable and formatted, but there is room for improvement",
+            "text is readable and well formatted"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Deliverables",
+      "aspects": [
+        {
+          "type": "measurement",
+          "description": "No frameworks are used",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Responsive design is implemented on all pages",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "extraDescription": "Deduct 0.1 for each error",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "Navigation is consistent across all pages",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "README.md file is present and contains the required information",
+          "maxMark": 0.25,
+          "wsosSection": 2,
+          "extraDescription": "Information on how to run the project and how to change the data-type attribute",
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "measurement",
+          "description": "OpenGraph tags and SEO are implemented",
+          "maxMark": 0.25,
+          "wsosSection": 3,
+          "calculation": {
+            "type": "pass-or-fail"
+          }
+        },
+        {
+          "type": "judgement",
+          "description": "Quality of micro-animations",
+          "maxMark": 0.5,
+          "wsosSection": 3,
+          "judgementScoreDescription": [
+            "pages have no micro-animations",
+            "micro-animations look simplistic",
+            "micro-animations look good but are insufficient",
+            "micro-animations are excellent"
+          ]
+        }
+      ]
+    }
+  ]
+}
